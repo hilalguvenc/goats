@@ -1,63 +1,231 @@
-li { float:left;
-      
-} 
 
-ul { 
-  list-style-type:none; 
-}
+li { float:left; } 
 
-li  {
-  color: black;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
-  font-style: inherit; 
-  margin-left: 30px;
-  position: relative;
-  left: 130px;
-  top: -20px;
-  font-weight:bold;
-}
-
-.menu_logo {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
-  font-style: normal;
-  color: black;
-  position: relative;
-  left: 10px;
-  top: 19px;
-}
-
-.menu_right{
-  text-align: center;
-}
+ul { list-style-type:none; }
 
 #ciftlik{
   position:absolute;
   max-width: 100%;
   height: auto;
-  opacity:0.3;
-  top: 95px;
-  left: 30px;
-  z-index: 1;
+  top:  -20px;
+  left: 0px;
+  z-index: -1;
 }
 
-nav{
-  background-color: white;
-  border-style: ridge;
-  height: 80PX; 
-}
+.search-box{
 
-.ana_yazi{
+  background-color: #fff;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  top: 40%;
+  width: 200px;
+  position: relative;
+  top: 200px;
   
-  font-size: 40px;
+
+}
+.yazi{
+  font-size: 10px;
   font-weight:bold;
-  font-style: italic;
-  margin-left: 22%;
-  margin-right: 10%;
-  margin-top: 10%;
+  font-style:normal;
+  z-index:2;
+  top: 800px;
+  color:#484848;
+  position: absolute;
+  left: 0;
 }
 
+.nav-link{
+background-color: rgb(255, 255, 255);
+box-sizing: border-box;
+color: rgb(72, 72, 72);
+display: block;
+font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+font-size: 14px;
+line-height: 20.02px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 2px;
+text-size-adjust: 100%;
+-webkit-font-smoothing: antialiased
+  
+}
+.milk{
+  
+  color:#484848;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 30px;
+  font-weight:bold;
+  position: absolute;
+  top: 10px;
+}
+.navbar-expand{
+  background-color: white;
+  padding: 0px;
+  width: 1300px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 65px;
+}
+.right-to{
+  float: right;
+}
+.nav-right{
+background-color: rgb(255, 255, 255);
+box-sizing: border-box;
+color: rgb(72, 72, 72);
+display: block;
+font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+font-size: 14px;
+line-height: 20.02px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: -25px;
+text-size-adjust: 100%;
+-webkit-font-smoothing: antialiased
+}
+.home-link{
+  background-color: rgb(255, 255, 255);
+box-sizing: border-box;
+color: rgb(72, 72, 72);
+display: block;
+font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+font-size: 14px;
+line-height: 20.02px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 26px;
+text-size-adjust: 100%;
+-webkit-font-smoothing: antialiased
+
+}
+.login{
+  background-color:#FF5A5F;
+  border: none; 
+  float: right;
+  color:white;
+  font-size:20px;
+  padding: 10px 22px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-size: 14px;
+  
+}
+ 
+.button-name{
+color: rgb(72, 72, 72);
+font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+font-size: 15px;
+font-weight: 650;
+margin-top: 20PX;
+}
+.box-writing{
+color: #484848;
+cursor: pointer;
+display: inline;
+font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+font-size: 30px;
+font-weight: 700;
+line-height: 36px;
+text-decoration-color: rgb(255, 255, 255);
+text-decoration-line: none;
+text-decoration-style: solid;
+text-size-adjust: 100%;
+text-transform: none;
+-webkit-font-smoothing: antialiased;
+}
+.card {
+ 
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+  top: 300px;
+  font-size: 16px;
+  color:  #484848;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  
+}
+.row {margin: 0 -5px;
+  font-size: 20px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card1-button{
+  color:  #484848;
+  background-color: white;
+}
+.card2-button{
+  color:  #484848;
+  background-color: white;
+}
+.card3-button{
+  color:  #484848;
+  background-color: white;
+}
+.card4-button{
+  color:  #484848;
+  background-color: white;
+}
+
+.order-popup {
+  position: absolute;
+  height: 100px;
+  z-index: 100;
+  top: 0px;
+  left: 0;
+}
+.close-popup{
+  background-color:#FF5A5F;
+  border: none; 
+  float: right;
+  color:white;
+  font-size:20px;
+  padding: 10px 22px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  font-size: 14px;
+  margin-top: 350px;
+ 
+}
+.help{
+color: #484848;
+font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+font-size: 20px;
+font-weight: 700;
+line-height: 36px;
+
+}
+.help-popup {
+  position: absolute;
+  height: 100px;
+  z-index: 100;
+  top: 0px;
+  right: 0;
+}
+.order{
+  color: #484848;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+} 
+
+ 
+
+
+ 
+
+
+  
 
 
