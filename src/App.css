@@ -1,37 +1,112 @@
 
-li { float:left; } 
+@media only screen and (min-width : 375px) and (max-width : 667px) {
+    .farm{
+      position:absolute;
+      top: 0;
+      max-width: 667px;
+      height: auto;
+    }
+    form{
+      display: block;
+      margin-top: 0em;
 
+    }
+    .search-box{
+      position:absolute;
+      max-width: 340px;
+      margin-top: 50px;
+      height: auto;
+      left: 0;
+    }
+    form{
+      position:absolute;
+      max-width: 310px;
+      height: 200px;
+      float: left;
+      font-size: 12px;
+    }
+    .login{
+      font-size: 4px;
+      max-width:8px 6px;
+      margin-top: 90px;
+      margin-left:auto;
+      margin-right: auto;
+      
+    }
+    .box-writing{
+      font-size: 5px;
+      font-weight: 300px;
+    }
+    .button-name{
+      font-size: 5px;
+      font-weight: 100px;
+      margin-top: 10px;
+    }
+    input{
+      position: relative;
+      margin-top: 0px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    .right-to{
+      position: absolute;
+      max-width: 200px;
+      margin-top: 0;
+      left: 210px;
+    }
+    .left-to{
+      padding: 10px;
+     left:0px;
+    }
+    .column{
+      display: inline-block; 
+      margin: 0px 100px;
+      max-width: 250px;
+      height: 20%;
+      align-content: center;
+    }
+    .card{
+      font-size: 6px;
+      height:260px;
+      width: 280px;
+    }
+    .card-header{
+      font-size: 20px;
+      text-align: left;
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+    .card-main{
+      text-align: left;
+    }
+    .help-popup{
+      max-width: 260px;
+      left: 0px;
+    }
+
+  }
+    
 ul { list-style-type:none; }
 
-#ciftlik{
-  position:absolute;
-  max-width: 100%;
-  height: auto;
-  top:  -20px;
+.farm{
+  position: absolute;
   left: 0px;
+  top: 0px;
   z-index: -1;
 }
-
 .search-box{
-  background-color: #fff;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  top: 40%;
-  width: 200px;
-  position: relative;
-  top: 200px;
-}
-
-.navbar-expand{
-  background-color: white;
-  padding: 0px;
-  width: 1300px;
   position: absolute;
-  left: 0;
-  top: 0;
-  height: 65px;
+  top: 200px;
+  width: 200px;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+} 
+form{
+  position: absolute;
+  top: 15px;
+  width:300px;
+  background-color: #fff;
 }
-
 .login{
   background-color:#FF5A5F;
   border: none; 
@@ -41,7 +116,16 @@ ul { list-style-type:none; }
   padding: 10px 22px;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
   font-size: 14px;
-  
+  margin-top: 320px;
+}
+.navbar-expand{
+  background-color: white;
+  padding: 0px;
+  width: 1300px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 65px;
 }
 .button-name{
 color: rgb(72, 72, 72);
@@ -53,7 +137,6 @@ margin-top: 20PX;
 .box-writing{
 color: #484848;
 cursor: pointer;
-display: inline;
 font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
 font-size: 30px;
 font-weight: 700;
@@ -65,30 +148,53 @@ text-size-adjust: 100%;
 text-transform: none;
 -webkit-font-smoothing: antialiased;
 }
+.right-to{
+  position: absolute;
+  color: #484848;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  right: 0;
+  padding: 20px;
+}
+.left-to{
+  position: absolute;
+  color: #484848;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  left: 1110px;
+  padding: 20px;
+}
+.row{
+  float: left;
+  padding: 20px;
+}
 .card {
- 
-  padding: 14px;
+  float: left;
+  padding: 12px;
   background-color: white;
-  top: 300px;
+  top: 700px;
   font-size: 16px;
   color:  #484848;
-  
+  border-width:5px;  
+  border-style:groove;
+  font-weight: 500;
+  text-align: left;
+}
+.card-header{
+  font-weight: 700;
+  background-color: white;
+  margin-left: 0;
 }
 .column {
-  float: left;
   text-align: center;
-  width: 25%;
   padding: 0 10px;
-  border-block-color: grey;
-  
-}
-.row {margin: 0 -5px;
-  font-size: 20px;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+  margin-left: 0px;
+  width: 25%;
+  float: left;
 }
 .close-popup{
   background-color:white;
@@ -164,27 +270,7 @@ orderBox{
   font-weight: 800;
 
 }
-.navbar-nav{
-  color: #484848;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 36px;
-  float:  right;
-  padding: 20px;
-  margin-left: -20px;
-}
 
-.right-to{
-  color: #484848;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 36px;
-  float:  right;
-  padding: 20px;
-
-}
 .reply{
 color: rgb(72, 72, 72);
 display: block;

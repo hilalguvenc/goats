@@ -27,16 +27,22 @@ class Anasayfa extends Component {
       }
     render() {
         return (
-            <div>
-            <div style={box} className="search-box">
-            <form >
+          <div>
+
+          <div className ="farm">
+          <img src={ciftlik} alt="" width="100%" height="100%" sizes="100vw"/> 
+          </div>   
+            
+            <div className="search-box" style={box} >
+            <form>
             <h1 className="box-writing">Günlük doğal keçi sütü için giriş yapın. {this.state.username} {this.state.address}</h1>
-            <p className="button-name">İSİM</p>
+            <p className="button-name" >İSİM</p>
             <input
               
               type='text'
               name='username'
               onChange={this.myChangeHandler}
+              placeholder="İsminizi giriniz."
             />
             <p className="button-name">SOYİSİM</p>
             <input
@@ -44,6 +50,7 @@ class Anasayfa extends Component {
               type='text'
               name='surname'
               onChange={this.myChangeHandler}
+              placeholder="Soyisminizi giriniz."
             />
             <p className="button-name">MAİL</p>
             <input
@@ -51,16 +58,19 @@ class Anasayfa extends Component {
               type='text'
               name='adress'
               onChange={this.myChangeHandler}
+              placeholder="Mailinizi giriniz."
             />
+            
             </form>
-            <button className="login"  onChange={this.myChangeHandler}>GİRİŞ YAP</button>
-            </div>
-            <div>
-             <img id="ciftlik" src={ciftlik} width="%500" height="%100" alt=""/>     
+            <button className="login" onChange={this.myChangeHandler}>GİRİŞ YAP</button>
+            
             </div>
 
             
             </div>
+
+            
+          
             
 
         )

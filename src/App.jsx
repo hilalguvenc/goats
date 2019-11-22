@@ -1,10 +1,4 @@
 import React, { useState } from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 import Anasayfa from './Anasayfa';
 import { OrderPopup } from "./popup/order";
 import { HelpPopup } from "./popup/help";
@@ -46,11 +40,12 @@ const App = () => {
   
   return (
          <div>
-        <div className="header">
           <nav className="navbar-expand">
-            <ul className="navbar-nav">
-              <li onClick={() => {setOrderPopupOpen(true)}}>Sipariş</li>
+          <div className="left-to">
+            <ul>
+            <li onClick={() => {setOrderPopupOpen(true)}}>Sipariş</li>
             </ul>
+            </div>
             <div className="right-to">
               <ul>
                 <li onClick={() => {setHelpPopupOpen(true)}}>Yardım</li>
@@ -64,26 +59,26 @@ const App = () => {
         {aboutOpen && <About onClose={onAboutClose} />}
         {transportOpen && <Transport onClose={onTransportClose} />}
         {whyOpen && <Why onClose={onWhyClose} />}
-        </div>
+        
                     
-                     <div className="row">
+                    
                      <div className="column">
                      <div className="card">
                      <ul>
                      <li className="card1" onClick={() => {setBenefitsOpen(true)}} >
-                     <h3 >Keçi Sütünün Faydaları</h3>
+                     <h3 className="card-header" >Keçi Sütünün Faydaları</h3>
                      <p>"Keçi sütünün bağışıklığı güçlendirme, metabolizmayı hızlandırma, kalp sağlığını koruma, kemikleri güçlendirme, kilo vermeye yardımcı olma gibi etkileri vardır." </p>
                      </li>
                      </ul> 
                      </div>
                      </div>
-                     </div>
+                    
 
                      <div className="column">
                      <div className="card">
                      <ul>
                      <li className="card2" onClick={() => {setAboutOpen(true)}} >
-                     <h3>Neden Keçi Sütü.Com?</h3>
+                     <h3 className="card-header">Neden Keçi Sütü.Com?</h3>
                      <p>Hijyenik, içerisinde katkı maddesi olmayan sütlerimizle %100 güven teşkil ediyoruz. </p>
                      </li>
                      </ul>
@@ -94,8 +89,8 @@ const App = () => {
                     <div className="card">
                     <ul>
                     <li className="card3" onClick={() => {setTransportOpen(true)}} >
-                    <h3>Aynı gün, kapınıza ücretsiz teslim!</h3>
-                    <p>Keçi Sütü.Com dan verdiğiniz siparişler istediğiniz saatte kapınıza ücretsiz teslim edilmektedir.</p>
+                    <h3 className="card-header">Aynı gün, kapınıza ücretsiz teslim!</h3>
+                    <p className="card-main">Keçi Sütü.Com dan verdiğiniz siparişler istediğiniz saatte kapınıza ücretsiz teslim edilmektedir.</p>
                     </li>
                     </ul>
                    </div>
@@ -105,7 +100,7 @@ const App = () => {
                    <div className="card">
                    <ul>
                    <li className="card4" onClick={() => {setWhyOpen(true)}} >
-                   <h3>Biz Kimiz?</h3>
+                   <h3 className="card-header">Biz Kimiz?</h3>
                    <p>Yıllardır edinmiş olduğumuz tecrübe ile hijyenik, doğal keçi sütünü çiftlikten kapınıza getiriyoruz.</p>
                    </li>
                    </ul>
