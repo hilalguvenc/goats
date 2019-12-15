@@ -1,0 +1,17 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+
+}
+
+.navbar-actions {
+  display: flex;
+  margin-right: 20px;
+}
+
+.navbar-actions-item {
+
+}
