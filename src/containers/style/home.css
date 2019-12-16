@@ -1,3 +1,7 @@
 .container {
+  background-image: url('../../ciftlik.jpg');
   padding: 10px;
+  height: 70vh;
+  display: flex;
+  align-items: center;
 }
